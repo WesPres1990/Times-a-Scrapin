@@ -118,6 +118,8 @@ body {
 
 .panel.panel-default .panel-footer .btn.btn-info.delete{
   background: red;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 
 .footer > .container > p {

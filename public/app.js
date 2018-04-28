@@ -22,7 +22,6 @@ $(document).on("click", ".add", function() {
       // With that done, add the note information to the page
       .then(function(data) {
         console.log(data);
-    +   
         $("#"+thisId+"notes")
         // The title of the article
         .append("<h4>" + data.title + "</h4>" +
@@ -108,7 +107,7 @@ $(document).on("click", ".unsave", function () {
 $(document).on("click", ".delete", function() {
     // Empty the notes from the note section
     $("#"+thisId+"notes").empty();
-    // Save the id from the p tag
+    // Save the id from the delete tag
     var thisId = $(this).attr("data-id");
   
     // Now make an ajax call for the Article
