@@ -1,28 +1,27 @@
+// Require Mongoose
 var mongoose = require("mongoose");
 
-// Save a reference to the Schema constructor
+// Saving a reference to the Schema constructor
 var Schema = mongoose.Schema;
 
-// Using the Schema constructor, create a new UserSchema object
-// This is similar to a Sequelize model
+// Creating a new NoteSchema object via use of the Schema constructor
 var ArticleSchema = new Schema({
-  // `title` is required and of type String
   title: {
       type: String,
       required: true
   },
-  // `link` is required and of type String
   link: {
       type: String,
       required: true
   },
-  url: {
+  summary: {
       type: String,
-      required: true,
+      required: false
   },
   saved: {
       type: Boolean,
-      default: false
+      default: false,
+      required: true
   },
   // `note` is an object that stores a Note id
   // The ref property links the ObjectId to the Note model
