@@ -1,0 +1,28 @@
+{{!-- Article Container --}}
+<div class="container-fluid article-container">
+    {{#each Article mode="prepend"}} {{#unless saved}}
+    <div class="panel panel-default">
+        {{!-- Article Link and Save Button --}}
+        <div class="panel-heading">
+            <h3>
+                <a class="article-link" target="_blank" href="https://www.thetimes.co.uk{{this.link}}">{{this.title}}</a>
+                <a class="btn btn-success save" data-id={{this.id}}>Save Article</a>
+            </h3>
+        </div>
+
+        {{!-- Article Summary --}}
+        <div class="panel-body">
+            {{this.summary}}
+        </div>
+
+        {{!-- Add and Remove Notes --}}
+        <div class="panel-footer">
+            <button class='btn btn-info add' data-id={{this.id}}>Add Note</button>
+            <div id="{{this.id}}notes"></div>
+
+            <button class='btn btn-info delete' data-id={{this.id}}>Remove Note</button>
+            <div id="{{this.id}}notes"></div>
+        </div>
+    </div>
+    {{/unless}} {{/each}}
+</div>
