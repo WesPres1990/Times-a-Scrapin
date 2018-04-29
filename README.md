@@ -102,4 +102,4 @@ Please feel free to branch off with tweaks and making a repo; open to suggestion
 
 ## Authors
 
-* **Wesley Hutchins** - [Github](https://github.com/WesPres1990)
+* **Wesley Hutchins** - [Github](https://github.com/WesPres1990) | [Portfolio](https://wespres1990.github.io/Basic-Portfolio/index.html)
