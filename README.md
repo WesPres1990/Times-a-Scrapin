@@ -80,7 +80,7 @@ Text Editor - Visual Studio Code
 
 ### Article and modified note on Home (Main) Page with working link to article at lower right
 - - - -
-<img src="screenshots/times-7.PNG"/>
+<img src="screenshots/times-7.png"/>
 
 ### Note deleted
 - - - -
